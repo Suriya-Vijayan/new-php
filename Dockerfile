@@ -2,13 +2,13 @@
 FROM php:7.4-apache
 
 # Set the working directory to /var/www/html
-WORKDIR /home/ubuntu/php
+WORKDIR /var/www/html
 
 # Install the PHP MySQL extension
 RUN docker-php-ext-install mysqli
 
 # Copy the application code into the container
-COPY . /home/ubuntu/php
+COPY . /var/www/html
 
 # Expose port 80 for Apache
 EXPOSE 80
