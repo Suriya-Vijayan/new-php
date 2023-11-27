@@ -20,6 +20,6 @@ node {
     
     stage ('Application Deployment'){
         echo 'Deploying the application in the server'
-        sh 'docker run -d -p 8081:80 suriyavijayan/my-php-web:1.0'
+        sh 'docker run -d -p 8082:80 suriyavijayan/my-php-web:1.0'
     } 
 }
